@@ -1,6 +1,6 @@
 使用gcc編譯成執行檔，需要加入--static 讓complier連結lib.c編入執行檔。
 範例:
-gcc --static qicksort.c -o quicksort
+gcc --static quicksort.c -o quicksort
 這樣就會產生quicksort執行檔，接著就可以用gem5來跑。
 
 
