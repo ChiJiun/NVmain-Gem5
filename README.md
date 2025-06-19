@@ -26,7 +26,7 @@ config
 git clone https://github.com/SEAL UCSB/NVmain
 ```
 
-模擬使用[安裝GEM5](https://gem5.googlesource.com/public/gem5/+/525ce650e1a5bbe71c39d4b15598d6c003cc9f9e)
+[安裝GEM5](https://gem5.googlesource.com/public/gem5/+/525ce650e1a5bbe71c39d4b15598d6c003cc9f9e)
 
 
 **2. Enable L3 last level cache**
@@ -185,6 +185,16 @@ src/mem/cache/base.cc 在1073行加入
         }
 ```
 
+執行
 ```
 ./build/X86/gem5.opt configs/example/se.py -c ./multiply --cpu-type=TimingSimpleCPU --caches --l2cache --l3cache --l3_assoc=4 --l1i_size=32kB --l1d_size=32kB --l2_size=128kB --l3_size=1MB --mem-type=NVMainMemory --nvmain-config=../NVmain/Config/PCM_ISSCC_2012_4GB.config
+```
+
+**bonus. Design last level cache policy to reduce the energy consumption of pcm_based main memory**
+---
+根據src/mem/cache/replacement_policy/lru_rp.cc以及lru_rp.hh修改
+並修改src/mem/cache/replacement_policy/SConscript以及ReplacementPolicies.py
+執行
+```
+./build/X86/gem5.opt configs/example/se.py -c ./quicksort --cpu-type=TimingSimpleCPU --caches --l1i_size=32kB --l1d_size=32kB --l2cache --l2_size=128kB --l3cache --l3_size=1MB --mem-type=NVMainMemory --nvmain-config=../NVmain/Config/PCM_ISSCC_2012_4GB.config
 ```
