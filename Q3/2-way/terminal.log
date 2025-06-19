@@ -2,9 +2,9 @@ vboxuser@Ubuntu:~/gem5-525ce650e1a5bbe71c39d4b15598d6c003cc9f9e$ ./build/X86/gem
 gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
-gem5 compiled Jun 15 2025 23:47:09
-gem5 started Jun 16 2025 13:52:48
-gem5 executing on Ubuntu, pid 4608
+gem5 compiled Jun 19 2025 18:47:06
+gem5 started Jun 19 2025 18:50:39
+gem5 executing on Ubuntu, pid 7093
 command line: ./build/X86/gem5.opt configs/example/se.py -c ./quicksort --cpu-type=TimingSimpleCPU --caches --l2cache --l3cache --l3_assoc=2 --l1i_size=32kB --l1d_size=32kB --l2_size=128kB --l3_size=1MB --mem-type=NVMainMemory --nvmain-config=../NVmain/Config/PCM_ISSCC_2012_4GB.config
 
 Global frequency set at 1000000000000 ticks per second

@@ -4,11 +4,11 @@ sim_seconds                                  0.000078                       # Nu
 sim_ticks                                    78168000                       # Number of ticks simulated
 final_tick                                   78168000                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
 sim_freq                                 1000000000000                       # Frequency of simulated ticks
-host_inst_rate                                 259067                       # Simulator instruction rate (inst/s)
-host_op_rate                                   467617                       # Simulator op (including micro ops) rate (op/s)
-host_tick_rate                             3543535926                       # Simulator tick rate (ticks/s)
+host_inst_rate                                 165905                       # Simulator instruction rate (inst/s)
+host_op_rate                                   299473                       # Simulator op (including micro ops) rate (op/s)
+host_tick_rate                             2269443322                       # Simulator tick rate (ticks/s)
 host_mem_usage                                 721960                       # Number of bytes of host memory used
-host_seconds                                     0.02                       # Real time elapsed on the host
+host_seconds                                     0.03                       # Real time elapsed on the host
 sim_insts                                        5712                       # Number of instructions simulated
 sim_ops                                         10313                       # Number of ops (including micro ops) simulated
 system.voltage_domain.voltage                       1                       # Voltage in Volts
@@ -675,12 +675,6 @@ system.tol2bus.respLayer0.occupancy            345000                       # La
 system.tol2bus.respLayer0.utilization             0.4                       # Layer utilization (%)
 system.tol2bus.respLayer1.occupancy            202500                       # Layer occupancy (ticks)
 system.tol2bus.respLayer1.utilization             0.3                       # Layer utilization (%)
-system.tol3bus.snoop_filter.tot_requests          364                       # Total number of requests made to the snoop filter.
-system.tol3bus.snoop_filter.hit_single_requests            0                       # Number of requests hitting in the snoop filter with a single holder of the requested data.
-system.tol3bus.snoop_filter.hit_multi_requests            0                       # Number of requests hitting in the snoop filter with multiple (>1) holders of the requested data.
-system.tol3bus.snoop_filter.tot_snoops              0                       # Total number of snoops made to the snoop filter.
-system.tol3bus.snoop_filter.hit_single_snoops            0                       # Number of snoops hitting in the snoop filter with a single holder of the requested data.
-system.tol3bus.snoop_filter.hit_multi_snoops            0                       # Number of snoops hitting in the snoop filter with multiple (>1) holders of the requested data.
 system.tol3bus.pwrStateResidencyTicks::UNDEFINED     78168000                       # Cumulative time (in ticks) in various power states
 system.tol3bus.trans_dist::ReadResp               285                       # Transaction distribution
 system.tol3bus.trans_dist::ReadExReq               79                       # Transaction distribution
