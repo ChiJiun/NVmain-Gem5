@@ -541,7 +541,7 @@
                         "pid": 100, 
                         "kvmInSE": false, 
                         "cxx_class": "Process", 
-                        "executable": "./quicksort", 
+                        "executable": "./quicksort_", 
                         "drivers": [], 
                         "system": "system", 
                         "gid": 100, 
@@ -558,7 +558,7 @@
                         "path": "system.cpu.workload", 
                         "name": "workload", 
                         "cmd": [
-                            "./quicksort"
+                            "./quicksort_"
                         ], 
                         "errout": "cerr", 
                         "useArchPT": false, 
